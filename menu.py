@@ -1,12 +1,8 @@
 import this
 import hamburgao
-import pizza
-import milFolhasFrango
-import milFolhasQueijo
-import bauru
 
 
-
+this.opcao = 0
 def Menu ():
     print('Escolha uma das opções abaixo:\n'+
           '\n1. Hamburgão R$5,00'+
@@ -24,7 +20,7 @@ def operacao():
         #realizar operações
         if this.opcao == 1:
             #operacao para 1.
-            hamburgao.coletar()
+            hamburgao.Compra()
         elif this.opcao == 2:
             #operacao para 2.
             pizza.coletar()
@@ -40,3 +36,6 @@ def operacao():
             print('Fechando... agradecemos sua presença aqui!')
         else:
             print('Opcao escolhida inválida! Tente novamente com as opções fornecidas.')
+
+
+
