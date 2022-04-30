@@ -25,4 +25,5 @@ def operacao():
             print("Horário da reserva confirmado entre 21:0/21:30")
             menu.Menu()
         else:
+
             print('Opcao escolhida inválida! Tente novamente com as opções fornecidas.')

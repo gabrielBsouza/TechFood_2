@@ -20,6 +20,7 @@ def operacao():
         elif this.opcao == 2:
             print('Fechando... agradecemos sua presença aqui!')
         else:
+
             print('Opcao escolhida inválida! Tente novamente com as opções fornecidas.')
 
 
