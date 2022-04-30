@@ -1,4 +1,7 @@
 import this
+import reserva
+import reservaHorario
+import menu
 this.precoHamburgao = 5
 this.quantHamburgao = 10
 this.quantidade = 0
@@ -25,3 +28,24 @@ def Compra ():
     Quantidade()
     Selecao()
     print('O valor total da compra é: '+ str(Calculo()) +',00.')
+
+def Menu():
+    Compra()
+    print('Escolha uma das opções abaixo:\n' +
+            "\n1. Efetuar Reserva " +
+            "\n2. Cancelar e escolher outro produto " +
+            "\n3. Cancelar e fechar o programa ")
+    this.opcao = int(input())
+
+def operacao():
+    Compra()
+    while this.opcao != 3:
+        Menu()
+        if this.opcao == 1:
+            reservaHorario.operacao()
+        elif this.opcao == 2:
+            menu.Menu()
+        elif this.opcao == 3:
+            print('Fechando... agradecemos sua presença aqui!')
+        else:
+            print('Opcao escolhida inválida! Tente novamente com as opções fornecidas.')

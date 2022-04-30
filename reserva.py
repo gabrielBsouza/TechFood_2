@@ -14,15 +14,15 @@ def Menu():
         "\n3. Cancelar e fechar o programa ")
     this.opcao = int(input())
 def operacao():
+    coletar()
     while this.opcao != 3:
         Menu()
         # realizar operações
         if this.opcao == 1:
-            reservaHorario.escolhaHorario()
+            reservaHorario.operacao()
         elif this.opcao == 2:
             menu.Menu()
         elif this.opcao == 3:
             print('Fechando... agradecemos sua presença aqui!')
         else:
-
             print('Opcao escolhida inválida! Tente novamente com as opções fornecidas.')

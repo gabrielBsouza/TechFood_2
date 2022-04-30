@@ -11,8 +11,8 @@ def escolhaHorario():
     this.opcao = int(input())
 
 def operacao():
-        # Mostrar o menu em tela
-    while this.opcao != 1 or 2 or 3:
+    escolhaHorario()  # Mostrar o menu em tela
+    while this.opcao != 0 :
         escolhaHorario()
         # realizar operações
         if this.opcao == 1:
@@ -25,5 +25,4 @@ def operacao():
             print("Horário da reserva confirmado entre 21:0/21:30")
             menu.Menu()
         else:
-
             print('Opcao escolhida inválida! Tente novamente com as opções fornecidas.')
